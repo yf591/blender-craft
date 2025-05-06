@@ -76,15 +76,20 @@ Download the `addon.py` file from the [Ahuja/blender-mcp repository](https://git
     ![blender_setting1](./images/blender_setting1.png)
 
 3.  Click the **Install...** button.
+    
     ![blender_setting2](./images/blender_setting2.png)
 
 4.  Select the downloaded `addon.py` file and install it.
+   
     ![blender_setting3](./images/blender_setting3.png)
+
 5.  After installation, search for "BlenderMCP" in the add-on list and enable it by checking the checkbox.
 
 #### 1.3. Verify Setup
 1.  In Blender's 3D Viewport, press the **N key** to display the sidebar.
+
 2.  If a "BlenderMCP" tab appears in the sidebar, the setup was successful.
+
     ![blender_setting4](./images/blender_setting4.png)
 
 ### 2. VSCode Setup
@@ -179,9 +184,13 @@ These are the setup instructions if you are using the Cursor editor. This sectio
 
 #### For Cursor
 1.  Go to **File** → **Preferences** → **Settings** and open "Cursor Settings".
+
 2.  Select **MCP** from the left-hand menu.
+
     ![cursor_setting2](./images/cursor_setting2.png)
+
 3.  The server defined in `mcp.json` ("blender") should appear in the list. Turn on the switch to its right. A status indicator (e.g., a green icon) should show it's active.
+
     ![cursor_setting3](./images/cursor_setting3.png)
 
 ### 2. Connect from Blender
@@ -200,6 +209,7 @@ Once VSCode (or Cursor) is successfully connected to Blender, you can use AI cha
 
 #### Example GitHub Copilot Setup (VSCode)
 When using GitHub Copilot Chat in VSCode, mention `@blender` (or the server name configured in `mcp.json`) in the chat window, or configure the agent so it can recognize the MCP server. (With an established MCP connection, Copilot can better understand the Blender context.)
+
 ![vscode_setting4](./images/vscode_setting4.png)
 
 The AI will convert your instructions into Python code (Blender Python API) and send it to Blender via MCP to generate the 3D model.
