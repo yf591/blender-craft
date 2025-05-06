@@ -72,16 +72,21 @@ Model Context Protocol (MCP) は、AIモデルと各種ソフトウェア間で�
 #### 1.2. Blenderへのアドオンインストールと有効化
 1.  Blenderを起動します。
 2.  **Edit** → **Preferences** → **Add-ons** を選択します。
+    
     ![blender_setting1](./images/blender_setting1.png)
+
 3.  **Install...** ボタンをクリックします。(画像では "Install from Disk" となっていますが、バージョンにより文言が若干異なる場合があります)
     ![blender_setting2](./images/blender_setting2.png)
+
 4.  ダウンロードした `addon.py` ファイルを選択し、インストールします。
     ![blender_setting3](./images/blender_setting3.png)
+
 5.  インストール後、アドオンリストで「**BlenderMCP**」を検索し、チェックボックスをオンにして有効化します。
 
 #### 1.3. 設定の確認
 1.  Blenderの3Dビューポートで **Nキー** を押してサイドパネルを表示します。
 2.  サイドパネルに「**BlenderMCP**」タブが表示されていれば設定成功です。
+        
     ![blender_setting4](./images/blender_setting4.png)
 
 ### 2. VSCode側の設定
@@ -167,14 +172,19 @@ Cursorエディタを使用する場合の設定です。VSCodeを使用する�
 #### VSCodeの場合
 1.  VSCodeで `.vscode/mcp.json` ファイルを開きます。
 2.  ファイル内に表示される「**起動**」(または "Start") というテキスト(CodeLens)をクリックします。
+    
     ![vscode_setting2](./images/vscode_setting2.png)
+
 3.  表示が「**実行中**」(または "Running") に変わることを確認します。
+
     ![vscode_setting3](./images/vscode_setting3.png)
 
 #### Cursorの場合
 1.  **File** → **Preferences** → **Settings** を選択し、「Cursor Settings」を開きます。
 2.  左側のメニューから **MCP** を選択します。
+
     ![cursor_setting2](./images/cursor_setting2.png)
+
 3.  `mcp.json` で設定したサーバー ("blender") がリストに表示されます。右側のスイッチをオンにし、ステータスが接続中のような表示 (緑色のアイコンなど) になればOKです。
     ![cursor_setting3](./images/cursor_setting3.png)
 
@@ -182,7 +192,9 @@ Cursorエディタを使用する場合の設定です。VSCodeを使用する�
 1.  Blenderの3Dビューポートで **Nキー** を押してサイドパネルを表示します。
 2.  「**BlenderMCP**」タブをクリックします。
 3.  「**Connect to MCP server**」ボタンをクリックします。
+    
     ![blender_setting4](./images/blender_setting4.png)
+
 4.  ボタンの表示が「**Disconnect from MCP server**」に変われば接続成功です。
     ![blender_setting5](./images/blender_setting5.png)
 
@@ -192,6 +204,7 @@ VSCode (またはCursor) とBlenderの接続が成功したら、AIチャット�
 #### GitHub Copilotの設定例 (VSCode)
 VSCodeでGitHub Copilot Chatを使用する場合、チャットウィンドウで `@blender` (またはmcp.jsonで設定したサーバー名) をメンションするか、エージェントがMCPサーバーを認識できるような設定を行います。
 (MCP連携が確立されていれば、CopilotがBlenderのコンテキストを理解しやすくなります。)
+
 ![vscode_setting4](./images/vscode_setting4.png)
 
 AIがユーザーの指示をPythonコード (Blender Python API) に変換し、MCPを通じてBlenderに送信することで3Dモデルが生成されます。

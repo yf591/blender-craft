@@ -72,9 +72,12 @@ Download the `addon.py` file from the [Ahuja/blender-mcp repository](https://git
 #### 1.2. Install and Enable the Add-on in Blender
 1.  Launch Blender.
 2.  Go to **Edit** → **Preferences** → **Add-ons**.
+    
     ![blender_setting1](./images/blender_setting1.png)
+
 3.  Click the **Install...** button.
     ![blender_setting2](./images/blender_setting2.png)
+
 4.  Select the downloaded `addon.py` file and install it.
     ![blender_setting3](./images/blender_setting3.png)
 5.  After installation, search for "BlenderMCP" in the add-on list and enable it by checking the checkbox.
@@ -167,8 +170,11 @@ These are the setup instructions if you are using the Cursor editor. This sectio
 #### For VSCode
 1.  Open the `.vscode/mcp.json` file in VSCode.
 2.  Click on the "Start" text (CodeLens) that appears within the file.
+    
     ![vscode_setting2](./images/vscode_setting2.png)
+
 3.  Confirm that the text changes to "Running".
+
     ![vscode_setting3](./images/vscode_setting3.png)
 
 #### For Cursor
@@ -182,8 +188,11 @@ These are the setup instructions if you are using the Cursor editor. This sectio
 1.  In Blender's 3D Viewport, press the **N key** to display the sidebar.
 2.  Click on the "BlenderMCP" tab.
 3.  Click the "Connect to MCP server" button.
+    
     ![blender_setting4](./images/blender_setting4.png)
+
 4.  If the button text changes to "Disconnect from MCP server", the connection is successful.
+    
     ![blender_setting5](./images/blender_setting5.png)
 
 ### 3. Create 3D Models in Blender using AI Agent Mode
